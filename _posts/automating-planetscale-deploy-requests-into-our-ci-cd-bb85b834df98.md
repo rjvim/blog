@@ -1,10 +1,10 @@
 ---
-title: "Automating Planetscale Deploy Requests into our CI/CD"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/assets/blog/preview/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+title: 'Automating Planetscale Deploy Requests into our CI/CD'
+excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+coverImage: '/assets/blog/preview/cover.jpg'
+date: '2020-03-16T05:35:07.322Z'
 ogImage:
-  url: "/assets/blog/preview/cover.jpg"
+  url: '/assets/blog/preview/cover.jpg'
 ---
 
 Before I jump into the solution, I want to put forward some context. For the past 4–5 years I have been using Postgres, and we switched one of our crucial microservices to MySQL, solely to reap the benefits of hosted database solutions. I heard about planetscale on a podcast, here is the link: https://founderstalk.fm/85
@@ -54,7 +54,7 @@ Second: Keep polling to see the status and confirm if it is done or not
 I used "Repeater" to make the possible.
 
 ```js
-const { Repeater } = require("@repeaterjs/repeater");
+const { Repeater } = require('@repeaterjs/repeater');
 ```
 
 Now, let's write the solution in points:
@@ -78,7 +78,7 @@ Helpers
 
 I use docker, so I installed pscale command line utility using following:
 
-```
+```command-line
 RUN wget https://github.com/planetscale/cli/releases/download/v0.89.0/pscale_0.89.0_linux_amd64.deb
 RUN dpkg -i pscale_0.89.0_linux_amd64.deb; apt-get install -y -f
 RUN rm pscale_0.89.0_linux_amd64.deb

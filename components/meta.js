@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import Head from 'next/head';
+import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants';
 
 export default function Meta() {
   return (
@@ -37,6 +37,10 @@ export default function Meta() {
         content={`A statically generated blog example using Next.js and ${CMS_NAME}.`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <link
+        href={`https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css`}
+        rel="stylesheet"
+      />
     </Head>
-  )
+  );
 }

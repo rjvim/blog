@@ -17,10 +17,33 @@ export default function Index({ allPosts }) {
           <title>Rajiv Seelam, I am</title>
         </Head>
         <Container>
-          <div className="flex flex-col-reverse sm:flex-row items-start my-8">
-            <div className="flex flex-col pr-8">
+          <div className="flex flex-col items-start my-8">
+            <div className="flex hidden">
+              <h1 className="flex font-bold text-3xl md:text-5xl tracking-tight mb-3 text-black dark:text-white">
+                <span className="flex justify-center -space-x-4">
+                  <span className="font-bold text-3xl md:text-5xl rounded-full mix-blend-multiply  flex items-center justify-center">
+                    Rajiv
+                  </span>
+                  <span className="font-bold text-3xl md:text-5xl text-gray-200 rounded-full mix-blend-multiply  flex items-center justify-center">
+                    rjv
+                  </span>
+                </span>
+                <span>,</span>
+                <span className="flex justify-center -space-x-4">
+                  <span className="font-bold text-3xl md:text-5xl rounded-full mix-blend-multiply  flex items-center justify-center">
+                    I am
+                  </span>
+                  <span className="font-bold text-3xl md:text-5xl text-gray-200 rounded-full mix-blend-multiply  flex items-center justify-center">
+                    im
+                  </span>
+                </span>
+              </h1>
+            </div>
+
+            <div className="flex flex-col">
               <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-3 text-black dark:text-white">
-                Rajiv Seelam, I'm
+                <span className="z-20">Rajiv</span>, I am{' '}
+                <span className="text-gray-200">(rjv.im)</span>
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
                 Developer at {'  '}

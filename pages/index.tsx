@@ -45,7 +45,6 @@ export default function Index({ allPosts }) {
                 development, serverless, and React / Next.js.
               </p>
             </div>
-            <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto"></div>
           </div>
 
           {/* <Intro /> */}

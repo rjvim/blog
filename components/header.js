@@ -2,9 +2,11 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
+    <h2 className="text-base font-semibold tracking-tight md:tracking-tighter leading-tight mb-8 mt-8">
       <Link href="/">
-        <a className="hover:underline tracking-wide">rjv.im</a>
+        <a className="hover:underline tracking-wide uppercase flex items-center">
+          {'< '} Home
+        </a>
       </Link>
     </h2>
   );

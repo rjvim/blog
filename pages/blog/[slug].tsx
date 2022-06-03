@@ -19,30 +19,30 @@ export default function Post({ post, morePosts, preview }) {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
-        {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | {CMS_NAME}
-                </title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <div className="mx-auto">
+        <div className="pb-32 max-w-3xl mx-auto">
+          <Header />
+          {router.isFallback ? (
+            <PostTitle>Loading…</PostTitle>
+          ) : (
+            <>
+              <article className="">
+                <Head>
+                  <title>
+                    {post.title} | {CMS_NAME}
+                  </title>
+                  <meta property="og:image" content={post.ogImage.url} />
+                </Head>
                 <PostHeader
                   title={post.title}
                   coverImage={post.coverImage}
                   date={post.date}
                   author={post.author}
                 />
-              </div>
-              <PostBody content={post.content} />
-            </article>
-          </>
-        )}
+                <PostBody content={post.content} />
+              </article>
+            </>
+          )}
+        </div>
       </Container>
     </Layout>
   );

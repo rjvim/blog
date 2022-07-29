@@ -18,7 +18,7 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <div className="flex flex-col items-start my-8">
-            <div className="flex hidden">
+            <div className="hidden">
               <h1 className="flex font-bold text-3xl md:text-5xl tracking-tight mb-3 text-black dark:text-white">
                 <span className="flex justify-center -space-x-4">
                   <span className="font-bold text-3xl md:text-5xl rounded-full mix-blend-multiply  flex items-center justify-center">

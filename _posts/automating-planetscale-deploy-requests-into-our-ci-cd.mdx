@@ -32,7 +32,7 @@ Let's first breakdown how pscale expects to make schema changes:
 
 In Laravel or KnexJS world, basically, you take a branch from main and then run migrate command on that branch. Raise a deploy request, merge it and then those changes would be applied to main branch.
 
-**The challenges I faced with this flow:**
+## **Challenges**
 
 - I can't just add a migration file and hope to push to my codebase master branch and hope migrate will work
 - At the same time I don't want to create a branch manually, run migrate command manually, make deploy request manually, etc., etc.,
